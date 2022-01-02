@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #240046;
+  color: #e0aaff;
+  min-height: 100vh;
+  width: 100vw; }
+
+.container {
+  padding: 40px; }
+  .container h1,
+  .container p {
+    text-align: center;
+    margin-bottom: 20px; }
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 500px;
+  background-color: #7b2cbf;
+  min-height: 200px;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 0 auto; }
+  .form-container form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 100%; }
+    .form-container form input {
+      width: 100%; }
+    .form-container form input:focus {
+      outline: none; }
+    .form-container form button {
+      font-weight: bold;
+      background-color: #e0aaff;
+      cursor: pointer; }
+    .form-container form input,
+    .form-container form button {
+      font-size: 1.3rem;
+      padding: 10px 20px;
+      color: #240046;
+      border: none; }
+  .form-container .category-selection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    width: 100%; }
+    .form-container .category-selection select {
+      padding: 10px 20px;
+      color: #240046;
+      border: none;
+      font-size: 1.3rem;
+      background-color: #e0aaff;
+      max-width: 100%; }
+    .form-container .category-selection select:focus {
+      outline: none; }
+
+.todo-list-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  flex-wrap: wrap; }
+  .todo-list-container .todo-category-container {
+    min-width: 300px;
+    background-color: white;
+    text-align: center;
+    margin: 20px 10px;
+    color: #240046;
+    padding: 20px;
+    border-radius: 15px;
+    height: fit-content; }
+    .todo-list-container .todo-category-container h4 {
+      font-size: 1.5rem; }
+
+.todo-list-header {
+  text-align: center;
+  margin: 30px 0;
+  font-size: 2rem; }
+
+.todo-item-container {
+  display: flex;
+  width: 100%;
+  margin: 10px auto;
+  height: auto;
+  padding: 10px;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #240046;
+  border-radius: 10px; }
+  .todo-item-container p {
+    margin-bottom: 0; }
+  .todo-item-container .completed {
+    text-decoration: line-through; }
+  .todo-item-container button {
+    margin: 0 6px;
+    border: none;
+    color: #240046;
+    font-size: 1.2rem;
+    cursor: pointer; }
